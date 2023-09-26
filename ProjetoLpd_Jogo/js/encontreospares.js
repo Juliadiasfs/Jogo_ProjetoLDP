@@ -28,7 +28,7 @@ let timerInterval;
 const checkEndGame = () => {
     const cartasdesativasas = document.querySelectorAll('.disabled-card');
     if (cartasdesativasas.length == 18) {
-        clearInterval(timerInterval); // Pare o temporizador
+        clearInterval(timerInterval); 
         alert(`Parabéns, você ganhou! Seu tempo foi ${timer.innerHTML} segundos!`);
     }
 }

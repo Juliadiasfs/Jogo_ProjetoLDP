@@ -4,3 +4,9 @@ document.getElementById("botao2").addEventListener("click", function() {
 document.getElementById("botao1").addEventListener("click", function() {
     window.location.href = "encontreospares.html";
 });
+
+
+
+
+
+

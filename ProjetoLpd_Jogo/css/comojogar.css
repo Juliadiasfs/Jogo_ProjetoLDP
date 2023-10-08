@@ -5,21 +5,64 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
-}
-
-h1{
-    color: white;
+    height: 100vh;
     font-family: 'Barlow Condensed', sans-serif;
-    margin-bottom: 35px;
-    font-size: 50px;
+    margin: 0;
+    padding: 0;
 }
 
-#texto{
-    padding: 20px;
+h1 {
+    color: white;
+    font-size: 36px;
     text-align: center;
-    color:white ;
-    background-color: rgba(0, 0, 0, 0.856);
-    border-radius: 5px;
+    margin: 0 0 20px;
+}
 
+#texto {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    padding: 50px;
+    color: white;
+    max-width: 600px;
+    text-align: left;
+}
+
+.instrucoes {
+    list-style-type: none;
+    padding: 0;
+}
+
+.instrucoes h4 {
+    font-size: 24px;
+    margin-top: 15px;
+}
+
+.instrucoes li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.instrucoes ul {
+    padding-left: 20px;
+}
+
+.botao-iniciar {
+    display: inline-block;
+    padding: 10px 50px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 50px; 
+    right: 200px; 
+    z-index: 999; 
+}
+
+.botao-iniciar:hover {
+    background-color: white;
+    color: black;
 }

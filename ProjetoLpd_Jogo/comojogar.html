@@ -8,12 +8,44 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&display=swap" rel="stylesheet">
-
     <title>Como Jogar</title>
 </head>
 <body>
     <div id="texto">
-    <h1>Como jogar?</h1>
-    <p></p></div>
+        <h1>Como Jogar?</h1>
+        <div>
+            <ul class="instrucoes">
+                <li><h4>Objetivo</h4>O objetivo do jogo é encontrar todos os pares de cartas correspondentes, virando duas cartas por vez e fazendo o máximo de pares possível.</li>
+                <li><h4>Single Player</h4>
+                    <ul>
+                        <li>O jogador começa a jogar virando duas cartas da grade, uma de cada vez, revelando seu conteúdo.</li>
+                        <li>Se as duas cartas são idênticas (um par correspondente), o jogador ganha um ponto.</li>
+                        <li>Se as duas cartas não são correspondentes, o jogador continua virando cartas e tentando encontrar pares correspondentes até que todas as cartas tenham sido emparelhadas.</li>
+                    </ul>
+                </li>
+                <li><h4>Fim de jogo</h4>
+                    <ul>
+                        <li>Quando todas as cartas estiverem em pares correspondentes, o jogo termina e o tempo que o jogador levou para terminar o jogo é registrado.</li>
+                    </ul>
+                </li>
+                <li><h4>Multiplayer</h4>
+                    <ul>
+                        <li>O jogador 1 começa o jogo. Eles viram duas cartas na grade, uma de cada vez, revelando seu conteúdo.</li>
+                        <li>Se as duas cartas são idênticas (um par correspondente), o jogador ganha 1 ponto, em seguida, sua vez termina. A vez passa para o outro jogador.</li>
+                        <li>Se as duas cartas não são correspondentes, o jogador 1 não ganhará ponto, e será a vez do outro jogador.</li>
+                    </ul>
+                </li>
+                <li><h4>Fim de jogo</h4>
+                    <ul>
+                        <li>O jogo continua até que todas as cartas tenham sido emparelhadas.</li>
+                        <li>No final do jogo, é mostrado o jogador vencedor e sua quantidade de pontos.</li>
+                    </ul>
+                </li>
+            </ul>
+ 
+        </div>
+    </div>
+    <button id="botao-iniciar" class="botao-iniciar">Iniciar</button>
+    <script src="js/iniciar.js"></script>
 </body>
 </html>

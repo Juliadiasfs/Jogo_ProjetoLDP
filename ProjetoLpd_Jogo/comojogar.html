@@ -19,7 +19,6 @@
                 <li><h4>Single Player</h4>
                     <ul>
                         <li>O jogador começa a jogar virando duas cartas da grade, uma de cada vez, revelando seu conteúdo.</li>
-                        <li>Se as duas cartas são idênticas (um par correspondente), o jogador ganha um ponto.</li>
                         <li>Se as duas cartas não são correspondentes, o jogador continua virando cartas e tentando encontrar pares correspondentes até que todas as cartas tenham sido emparelhadas.</li>
                     </ul>
                 </li>
@@ -45,7 +44,11 @@
  
         </div>
     </div>
-    <button id="botao-iniciar" class="botao-iniciar">Iniciar</button>
-    <script src="js/iniciar.js"></script>
+    <button id="botao-iniciar" class="botao-iniciar">Voltar</button>
+    <script>
+    document.getElementById("botao-iniciar").addEventListener("click", function() {
+        window.location.href = "index.html";
+    });
+</script>
 </body>
 </html>

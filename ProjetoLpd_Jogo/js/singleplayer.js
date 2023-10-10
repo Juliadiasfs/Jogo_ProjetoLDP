@@ -1,3 +1,4 @@
+
 const grid = document.querySelector('.grid');
 const spanPlayer = document.querySelector('.player');
 const timer = document.querySelector('.timer');
@@ -11,7 +12,18 @@ const characters = [
     'loki',
     'groot',
     'capitaoamerica',
-    'homemdeferro'
+    'homemdeferro',
+    'deadpool',
+    'doutorestranho',
+    'fera',
+    'modok',
+    'noturno',
+    'panteranegra',
+    'srmysterio',
+    'visaobranco',
+    'wolverine',
+    'cavaleirodalua',
+    'caveiravermelha',
 ];
 
 const createElement = (tag, className) => {
@@ -27,9 +39,10 @@ let timerInterval;
 
 const checkEndGame = () => {
     const cartasdesativasas = document.querySelectorAll('.disabled-card');
-    if (cartasdesativasas.length == 18) {
+    if (cartasdesativasas.length == 40) {
         clearInterval(timerInterval); 
-        alert(`Parabéns, você ganhou! Seu tempo foi ${timer.innerHTML} segundos!`);
+        const tempo = timer.innerHTML;
+        window.location.href = `vencedorsingleplayer.html?tempo=${tempo}`;
     }
 }
 

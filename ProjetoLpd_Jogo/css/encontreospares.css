@@ -81,6 +81,9 @@ background-color: #b1aeae;
     filter: saturate(0);
     opacity: 0.5;
 }
-#player1{ 
-    margin-bottom: 8px;
+#p1{ 
+    margin-left: 8px;
+}
+#p2{ 
+    margin-right: 8px;
 }

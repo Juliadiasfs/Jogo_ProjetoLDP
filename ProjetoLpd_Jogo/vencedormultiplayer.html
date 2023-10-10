@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/vencedor.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&display=swap" rel="stylesheet">
+    <title>Vencedor</title>
+</head>
+<body>
+
+        <h1 id="resultadoTitulo"></h1>
+        <p id="resultado"></p>
+        <button id="reiniciar">Reiniciar</button>
+        <button id="Home">Home</button>
+
+    <script>
+        // Recuperar a mensagem e o resultado do localStorage
+        const mensagem = localStorage.getItem('mensagem');
+        const resultado = localStorage.getItem('resultado');
+
+        // Exibir a mensagem no elemento com o id "resultado"
+        const resultadoElement = document.getElementById('resultado');
+        if (mensagem) {
+            resultadoElement.textContent = mensagem;
+        } else {
+            resultadoElement.textContent = 'Mensagem não encontrada'; // Mensagem de fallback se não houver mensagem no localStorage
+        }
+
+        // Atualizar o elemento h1 com base no resultado
+        const resultadoTituloElement = document.getElementById('resultadoTitulo');
+        if (resultado === 'vitoria') {
+            resultadoTituloElement.textContent = 'Parabéns!';
+        } else if (resultado === 'empate') {
+            resultadoTituloElement.textContent = 'Empate!';
+        } else {
+            resultadoTituloElement.textContent = 'Resultado Desconhecido';
+        }
+
+        document.getElementById("reiniciar").addEventListener("click", function () {
+            window.location.href = "multiplayer.html"; 
+        });
+
+        document.getElementById("Home").addEventListener("click", function () {
+            window.location.href = "index.html"; 
+        });
+
+    </script>
+</body>
+</html>

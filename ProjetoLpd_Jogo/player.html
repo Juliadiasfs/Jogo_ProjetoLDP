@@ -5,11 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/player.css">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&display=swap" rel="stylesheet">
     <title>Modo de Jogo</title>
 </head>
 <body>
-    <button id="botaoMultiplayer">Multiplayer</button>
-    <button id="botaoSinglePlayer">Single Player</button>
+    <h2>Escolha um modo de jogo:</h2>
+
+    <button id="singlePlayerButton">Single Player</button>
     
+    <button id="multiplayerButton">Multiplayer</button>
+
+    <script>
+        
+        document.getElementById("singlePlayerButton").addEventListener("click", function () {
+            window.location.href = "singleplayer.html"; 
+        });
+
+
+        document.getElementById("multiplayerButton").addEventListener("click", function () {
+            window.location.href = "multiplayer.html"; 
+        });
+    </script>
+
 </body>
 </html>

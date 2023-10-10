@@ -14,8 +14,15 @@
 <body> 
 
     <h1>Memória Marvel: Encontre os pares</h1>
-    <button id="botao1">Iniciar </button><br><br>
+    <button id="botao1">Iniciar </button><br>
     <button id="botao2"> Como Jogar </button>
-    <script src="js/javascript.js"></script>
+    <script>
+    document.getElementById("botao2").addEventListener("click", function() {
+        window.location.href = "comojogar.html";
+    });
+    document.getElementById("botao1").addEventListener("click", function() {
+        window.location.href = "player.html";
+    });
+    </script>
 </body>
 </html>

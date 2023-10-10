@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/vencedor.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&display=swap" rel="stylesheet">
+    <title>Vencedor</title>
+</head>
+<body>
+    <h1>Parabéns!</h1>
+    <p id="resultadosingle"></p>
+    <button id="reiniciar">Reiniciar</button>
+    <button id="Home">Home</button>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const tempo = urlParams.get('tempo');
+        const resultadosingle = document.getElementById('resultadosingle');
+        resultadosingle.textContent = `Você ganhou o jogo da memória em ${tempo} segundos.`;
+
+        const reiniciarButton = document.getElementById('reiniciar');
+        reiniciarButton.addEventListener('click', () => {
+            window.location.href = 'index.html'; 
+        });
+        
+        document.getElementById("reiniciar").addEventListener("click", function () {
+            window.location.href = "singleplayer.html"; 
+        });
+        document.getElementById("Home").addEventListener("click", function () {
+            window.location.href = "index.html"; 
+        });
+
+
+    </script>
+
+</body>
+</html>
